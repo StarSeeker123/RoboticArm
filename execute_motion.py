@@ -40,7 +40,7 @@ print listener.frameExists('eff')
 (trans,rot)=listener.lookupTransform('link1','eff',rospy.Time())
 print trans,rot
 
-rospy.Subscriber("computer_perception", Pose, my_callback, queue_size=10) 
+rospy.Subscriber("follow_apple", Pose, my_callback, queue_size=10) 
 
 rospy.loginfo("subscriber_py node started and subscribed to topic_py") #debug statement
 
